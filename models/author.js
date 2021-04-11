@@ -25,7 +25,7 @@ AuthorSchema
 .get(function () {
   let deathDate = this.date_of_death ? DateTime.fromJSDate(this.date_of_death).toLocaleString(DateTime.DATE_MED) : '';;
   let birthDate = this.date_of_birth ? DateTime.fromJSDate(this.date_of_birth).toLocaleString(DateTime.DATE_MED) : '';;
-  return (deathDate + " - " + birthDate);
+  return (birthDate + " - " + deathDate);
 });
 
 // Virtual for author's URL
